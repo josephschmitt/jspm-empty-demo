@@ -1,0 +1,23 @@
+{
+  "name": "@joe-sh/jspm-empty-dependency",
+  "version": "1.0.4",
+  "description": "",
+  "main": "index.js",
+  "format": "esm",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "jspm"
+  ],
+  "author": "Joe Schmitt <me@joe.sh>",
+  "license": "ISC",
+  "peerDependencies": {
+    "@joe-sh/jspm-empty-other-dependency": "^1.0.0"
+  },
+  "jspm": {
+    "map": {
+      "@joe-sh/jspm-empty-other-dependency": "@empty"
+    }
+  }
+}
