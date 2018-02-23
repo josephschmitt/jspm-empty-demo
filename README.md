@@ -18,13 +18,15 @@ This repository contains an application (`jspm-empty-demo-app`) and two packages
 
 ## Steps to reproduce the bug
 
-1. Check out this repository
-2. cd into `jspm-empty-demo-app` and run `npm install`
+1. Clone this repository
+2. Change directory to `jspm-empty-demo-app` and run `npm install`
 3. Bundle the application by running `npm run bundle`
 
 ## Expected outcome
 
-`jspm` successfully bundles the application
+`jspm` successfully bundles the application. It ignores the `jspm-empty-other-dependency` peer
+dependency from `jspm-empty-dependency` and instead successfully uses the map set in the app's
+`config.js`.
 
 ## Actual outcome
 
@@ -51,6 +53,10 @@ npm ERR! This is probably not a problem with npm. There is likely additional log
 npm ERR! A complete log of this run can be found in:
 npm ERR!     /.../.npm/_logs/2018-02-23T20_10_41_989Z-debug.log
 ```
+
+Additionally, if you open up `jspm-empty-demo-app/public/jspm_packages/npm/@joe-sh/jspm-empty-dependency@1.0.4/index.js`
+you'll notice that it's renamed `import otherDependency from '@joe-sh/jspm-empty-other-dependency/index.js'` to
+`import otherDependency from '@empty/index.js'`
 
 ## Observations
 
