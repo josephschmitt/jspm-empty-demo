@@ -21,7 +21,7 @@
       "baseURL": "public"
     },
     "dependencies": {
-      "@joe-sh/jspm-empty-dependency": "npm:@joe-sh/jspm-empty-dependency@^1.0.0"
+      "@joe-sh/jspm-empty-dependency": "npm:@joe-sh/jspm-empty-dependency@^1.0.4"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",

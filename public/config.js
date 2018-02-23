@@ -15,7 +15,7 @@ System.config({
   },
 
   map: {
-    "@joe-sh/jspm-empty-dependency": "npm:@joe-sh/jspm-empty-dependency@1.0.2",
+    "@joe-sh/jspm-empty-dependency": "npm:@joe-sh/jspm-empty-dependency@1.0.4",
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
     "core-js": "npm:core-js@1.2.7",
