@@ -1,12 +1,13 @@
 {
-  "name": "@joe-sh/jspm-empty-demo",
+  "name": "@joe-sh/jspm-empty-demo-app",
   "version": "1.0.0",
   "description": "",
-  "main": "public/dist/jspm-empty-demo.js",
+  "main": "public/dist/jspm-empty-demo-app.js",
   "format": "esm",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublish": "jspm bundle src/index.js ${npm_package_main}"
+    "postinstall": "jspm install",
+    "bundle": "jspm bundle src/index.js ${npm_package_main}"
   },
   "keywords": [
     "jspm"
