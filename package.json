@@ -1,0 +1,32 @@
+{
+  "name": "@joe-sh/jspm-empty-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "public/dist/jspm-empty-demo.js",
+  "format": "esm",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "jspm bundle src/index.js ${npm_package_main}"
+  },
+  "keywords": [
+    "jspm"
+  ],
+  "author": "Joe Schmitt <me@joe.sh>",
+  "license": "ISC",
+  "devDependencies": {
+    "jspm": "^0.16.47"
+  },
+  "jspm": {
+    "directories": {
+      "baseURL": "public"
+    },
+    "dependencies": {
+      "@joe-sh/jspm-empty-dependency": "npm:@joe-sh/jspm-empty-dependency@^1.0.0"
+    },
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.8.24",
+      "babel-runtime": "npm:babel-runtime@^5.8.24",
+      "core-js": "npm:core-js@^1.1.4"
+    }
+  }
+}
